@@ -1,7 +1,139 @@
 fileFormatVersion: 2
 guid: 12a631f0b63fdf74bbf966a8edfbd5d8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3122561273236315441
+    second: ui_gameout1_0
+  - first:
+      213: -1580034190933906224
+    second: ui_gameout1_1
+  - first:
+      213: 2710885897886294821
+    second: ui_gameout1_2
+  - first:
+      213: -6863654142872581131
+    second: ui_gameout1_3
+  - first:
+      213: 1882368619605541025
+    second: ui_gameout1_4
+  - first:
+      213: 8391434001342549700
+    second: ui_gameout1_5
+  - first:
+      213: 235630911041139811
+    second: ui_gameout1_6
+  - first:
+      213: 292101825137906435
+    second: ui_gameout1_7
+  - first:
+      213: 1867500196963599653
+    second: ui_gameout1_8
+  - first:
+      213: 169131946620685077
+    second: ui_gameout1_9
+  - first:
+      213: 5674257158305607702
+    second: ui_gameout1_10
+  - first:
+      213: 3852625957765946830
+    second: ui_gameout1_11
+  - first:
+      213: -2066578140254600323
+    second: ui_gameout1_12
+  - first:
+      213: 3318161616666153284
+    second: ui_gameout1_13
+  - first:
+      213: -4308479334570162360
+    second: ui_gameout1_14
+  - first:
+      213: -7306217417082235298
+    second: ui_gameout1_15
+  - first:
+      213: 6564851271525830668
+    second: ui_gameout1_16
+  - first:
+      213: -7442616357761785736
+    second: ui_gameout1_17
+  - first:
+      213: 904632881354488984
+    second: ui_gameout1_18
+  - first:
+      213: -4633224496635769300
+    second: ui_gameout1_19
+  - first:
+      213: 7864148995247685007
+    second: ui_gameout1_20
+  - first:
+      213: 3728339267872904995
+    second: ui_gameout1_21
+  - first:
+      213: 150055157022922948
+    second: ui_gameout1_22
+  - first:
+      213: 3475412221936024946
+    second: ui_gameout1_23
+  - first:
+      213: -96739929263835361
+    second: ui_gameout1_24
+  - first:
+      213: 4408831875966357701
+    second: ui_gameout1_25
+  - first:
+      213: 1606050002384646632
+    second: ui_gameout1_26
+  - first:
+      213: 4517565779639779864
+    second: ui_gameout1_27
+  - first:
+      213: 3874513887019761513
+    second: ui_gameout1_28
+  - first:
+      213: -8426809304347691795
+    second: ui_gameout1_29
+  - first:
+      213: -5291882889909099637
+    second: ui_gameout1_30
+  - first:
+      213: -1809428147055426805
+    second: ui_gameout1_31
+  - first:
+      213: 1714044080195650759
+    second: ui_gameout1_32
+  - first:
+      213: 8528703717387586049
+    second: ui_gameout1_33
+  - first:
+      213: -123379158802411485
+    second: ui_gameout1_34
+  - first:
+      213: -3112783525966977914
+    second: ui_gameout1_35
+  - first:
+      213: 9148716580376492750
+    second: ui_gameout1_36
+  - first:
+      213: 6292786632135638146
+    second: ui_gameout1_37
+  - first:
+      213: 7679422709827347619
+    second: ui_gameout1_38
+  - first:
+      213: 3842542853394159807
+    second: ui_gameout1_39
+  - first:
+      213: -4463780628567445039
+    second: ui_gameout1_40
+  - first:
+      213: 7511173444297046387
+    second: ui_gameout1_41
+  - first:
+      213: 5749356289291029480
+    second: ui_gameout1_42
+  - first:
+      213: -2959144722876542081
+    second: ui_gameout1_43
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +173,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +205,945 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ui_gameout1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 411
+        width: 196
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d54a81fe0955b20800000000000000
+      internalID: 3122561273236315441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 412
+        width: 196
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dca9645647921ae0800000000000000
+      internalID: -1580034190933906224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_2
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 460
+        width: 81
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523e02a7c500f9520800000000000000
+      internalID: 2710885897886294821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_3
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 502
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb01f81ce66fb0a0800000000000000
+      internalID: -6863654142872581131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_4
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 486
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a04eeb49448f1a10800000000000000
+      internalID: 1882368619605541025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_5
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 495
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce4826b3cc547470800000000000000
+      internalID: 8391434001342549700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_6
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 487
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36475bea011254300800000000000000
+      internalID: 235630911041139811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_7
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 471
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3039695ff01cd0400800000000000000
+      internalID: 292101825137906435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 410
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525ccf1e881bae910800000000000000
+      internalID: 1867500196963599653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 416
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b0f7efb90e85200800000000000000
+      internalID: 169131946620685077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_10
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 453
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610f50d62d20fbe40800000000000000
+      internalID: 5674257158305607702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 421
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd961185e6477530800000000000000
+      internalID: 3852625957765946830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 40
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d738981712a0253e0800000000000000
+      internalID: -2066578140254600323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 311
+        width: 346
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441d8b4f86a7c0e20800000000000000
+      internalID: 3318161616666153284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_14
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 368
+        width: 113
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84785dc5fd43534c0800000000000000
+      internalID: -4308479334570162360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_15
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 114
+        width: 151
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e569a0b18f91b9a90800000000000000
+      internalID: -7306217417082235298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 261
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00919a03790b1b50800000000000000
+      internalID: 6564851271525830668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_17
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 298
+        width: 47
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870e814fad386b890800000000000000
+      internalID: -7442616357761785736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_18
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 260
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cb54900d6ed8c00800000000000000
+      internalID: 904632881354488984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_19
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 295
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e03614eda73bfb0800000000000000
+      internalID: -4633224496635769300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_20
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 261
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dbb7a58d1132d60800000000000000
+      internalID: 7864148995247685007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_21
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 238
+        width: 114
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32754bf7fc8bdb330800000000000000
+      internalID: 3728339267872904995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_22
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 261
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8111bce5a151200800000000000000
+      internalID: 150055157022922948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_23
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 265
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d3c8890052b3030800000000000000
+      internalID: 3475412221936024946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_24
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 165
+        width: 75
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17f1a00c8f48aef0800000000000000
+      internalID: -96739929263835361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_25
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 165
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0d4617b315f2d30800000000000000
+      internalID: 4408831875966357701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_26
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 165
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1f6abc7f5d94610800000000000000
+      internalID: 1606050002384646632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_27
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 179
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812c3e8342e91be30800000000000000
+      internalID: 4517565779639779864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_28
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 166
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f71292ad905c530800000000000000
+      internalID: 3874513887019761513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_29
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 90
+        width: 81
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de43668b595fd0b80800000000000000
+      internalID: -8426809304347691795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_30
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 90
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83200a9c847f86b0800000000000000
+      internalID: -5291882889909099637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_31
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 90
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b030b20efae93e6e0800000000000000
+      internalID: -1809428147055426805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_32
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 72
+        width: 47
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c44c61720289c710800000000000000
+      internalID: 1714044080195650759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 11
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ac07d08da0c5670800000000000000
+      internalID: 8528703717387586049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_34
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 43
+        width: 138
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32055ea0f4ba94ef0800000000000000
+      internalID: -123379158802411485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_35
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 47
+        width: 72
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684ec0810eb2dc4d0800000000000000
+      internalID: -3112783525966977914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_36
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 33
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca31140245c6fe70800000000000000
+      internalID: 9148716580376492750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_37
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 34
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c75cfe918745750800000000000000
+      internalID: 6292786632135638146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_38
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 45
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4a35b644ac29a60800000000000000
+      internalID: 7679422709827347619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_39
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 46
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb856c2dd54735530800000000000000
+      internalID: 3842542853394159807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_40
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 2
+        width: 111
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1b7fe1b277d02c0800000000000000
+      internalID: -4463780628567445039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_41
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 10
+        width: 65
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3793ca1a37c0d3860800000000000000
+      internalID: 7511173444297046387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_42
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 10
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb895e6511d9cf40800000000000000
+      internalID: 5749356289291029480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_gameout1_43
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73d8f18d810fe6d0800000000000000
+      internalID: -2959144722876542081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

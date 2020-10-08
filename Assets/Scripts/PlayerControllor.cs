@@ -11,7 +11,7 @@ public class PlayerControllor : MonoBehaviour {
     //其他脚本可获取最大健康值
 
     // 初始速度
-    private float speed = 10f;
+    public float speed = 10f;
     // 无敌时间
     private float invincibleTime = 2f;
     // 无敌计时器
@@ -27,7 +27,6 @@ public class PlayerControllor : MonoBehaviour {
     private Vector2 boxSize;
 
     public float jumpForce = 2f; // 跳跃力度
-    private bool IsGround = true; // 是否在地板上
     private bool canJump = true; // 是否可以起跳
     public int MyMaxHealth { get { return maxHealth; } }
     //其他脚本可获取当前健康值
@@ -39,7 +38,7 @@ public class PlayerControllor : MonoBehaviour {
         boxCollider = GetComponent<BoxCollider2D> ();
         //初始化生命值
         currentHealth = maxHealth / 2;
-        //更新生命条与子弹数量
+        //更新生命条
         UIManager.instance.UpdateHealthBar (currentHealth, maxHealth);
 
     }
@@ -47,13 +46,28 @@ public class PlayerControllor : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         transform.Translate (Vector2.right * Time.deltaTime * speed);
+        //更新进度条
+        UIManager.instance.UpdateProgress (transform.position.x);
         //控制跳跃
         if (Input.GetKeyDown (KeyCode.W) && canJump) {
             jump ();
             // animator.SetBool ("Jump", true);
-            IsGround = false;
             canJump = false;
             // animator.SetBool ("DoubleJump", false);
+        }
+
+        // 攻击
+        if (Input.GetKeyDown (KeyCode.Space)) {
+            // animator.SetBool ("Jump", true);
+            // animator.SetBool ("DoubleJump", false);
+        }
+
+        // 无敌计时
+        if (isInvincible) {
+            invincibleTimer -= Time.deltaTime;
+            if (invincibleTimer <= 0) {
+                isInvincible = false;
+            }
         }
 
     }
@@ -61,20 +75,24 @@ public class PlayerControllor : MonoBehaviour {
     public void jump () {
         player.velocity = Vector2.up * jumpForce;
     }
+
+    // 攻击动作
+    public void attack () {
+        player.velocity = Vector2.right * jumpForce;
+    }
+
+    // 技能护盾
+    public void skill () {
+        invincibleTimer = 5f;
+        isInvincible = true;
+    }
     public void changeHealth (int amount) {
         //可能是受到伤害，也可能是加血
         if (amount < 0) {
             // 如果是受伤， 设置无敌状态， 则2秒内不能受伤
-            if (isInvincible == true) {
+            if (isInvincible) {
                 return;
             }
-            isInvincible = true;
-            //播放受伤动画
-            // anim.SetTrigger ("Hit");
-            // //播放受伤音效
-            // AudioManager.instance.AudioPlay (hitClip);
-            //为无敌计时器赋值
-            invincibleTimer = invincibleTime;
         }
         //更改健康值
         currentHealth = Mathf.Clamp (currentHealth + amount, 0, maxHealth);
@@ -87,7 +105,6 @@ public class PlayerControllor : MonoBehaviour {
     public void OnCollisionEnter2D (Collision2D coll) {
         if (coll.gameObject.tag == "Road") {
             canJump = true;
-            IsGround = true;
         }
     }
 }
