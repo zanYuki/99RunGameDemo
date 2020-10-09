@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class AttackClick : MonoBehaviour {
     Button attackButton;
-    // 开始时按钮不可用，待收集5个后可用
-    // public PlayerControllor player;
 
     public Text scoreText;
     // Start is called before the first frame update

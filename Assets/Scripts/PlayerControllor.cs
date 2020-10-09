@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControllor : MonoBehaviour {
+    UIManager UI;
 
     //最大健康值
     private int maxHealth = 10;
@@ -39,7 +41,7 @@ public class PlayerControllor : MonoBehaviour {
         //初始化生命值
         currentHealth = maxHealth / 2;
         //更新生命条
-        UIManager.instance.UpdateHealthBar (currentHealth, maxHealth);
+        UIManager.instance.UpdateHealthBar (currentHealth, maxHealth); 
 
     }
 
@@ -100,6 +102,9 @@ public class PlayerControllor : MonoBehaviour {
         UIManager.instance.UpdateHealthBar (currentHealth, maxHealth);
         //调试
         Debug.Log (currentHealth + "/" + maxHealth);
+        if(currentHealth == 0){
+        //    SceneManager.LoadScene("GameOver"); 
+        }
     }
 
     public void OnCollisionEnter2D (Collision2D coll) {
