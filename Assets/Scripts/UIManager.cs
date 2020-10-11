@@ -15,8 +15,12 @@ public class UIManager : MonoBehaviour {
 
     public Text scoreText;
     public static UIManager instance { get; private set; }
-    void Start () {
+
+    private void Awake () {
         instance = this;
+    }
+    void Start () {
+
     }
 
     public void UpdateHealthBar (int curAmount, int maxAmount) {

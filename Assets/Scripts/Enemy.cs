@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
-    private GameObject palyer;
+    private GameObject player;
     private float speed = 1f;
 
     // Start is called before the first frame update
     void Start () {
-        palyer = GameObject.FindWithTag ("Hero");
+        player = GameObject.FindWithTag ("Hero");
     }
 
     // Update is called once per frame
     void Update () {
         // 跟踪主角
-        // Vector2 v = palyer.transform.position;
+        // Vector2 v = player.transform.position;
         // // Debug.Log (v);
         // transform.Translate (v * Time.deltaTime * speed);
     }
