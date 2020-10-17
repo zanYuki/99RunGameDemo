@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
     // Start is called before the first frame update
 
-    public Image healthBar;
     public Slider hpSlider;
+
+    public Slider bossHpSlider;
 
     public Slider progressSlider;
 
@@ -24,8 +25,12 @@ public class UIManager : MonoBehaviour {
     }
 
     public void UpdateHealthBar (int curAmount, int maxAmount) {
-        healthBar.fillAmount = (float) curAmount / (float) maxAmount;
+        // healthBar.fillAmount = (float) curAmount / (float) maxAmount;
         hpSlider.value = (float) curAmount / (float) maxAmount;
+    }
+
+    public void UpdateBossHealthBar (int curAmount, int maxAmount) {
+        bossHpSlider.value = (float) curAmount / (float) maxAmount;
     }
 
     public void UpdateScore (int score) {

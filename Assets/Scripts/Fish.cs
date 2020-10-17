@@ -6,7 +6,7 @@ using UnityEngine;
 /// </summary>
 public class Fish : MonoBehaviour {
 
-    public GameObject player;
+    private GameObject player;
 
     // 判断是否开始行动
     private bool isMove = false;
