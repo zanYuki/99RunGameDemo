@@ -60,7 +60,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u65F6\u95F4\u8F74 1_0000"
+  m_Name: FishBoom
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:

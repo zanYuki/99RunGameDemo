@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 904636177262824858}
   - component: {fileID: 904636177262824853}
   - component: {fileID: -5946289468588426841}
+  - component: {fileID: 9054115187854378800}
   m_Layer: 0
   m_Name: fish
   m_TagString: Monster
@@ -158,3 +159,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d946bcf6782100439ce5a5d1b4a6143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
+--- !u!95 &9054115187854378800
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904636177262824862}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3124f6f508f02bf4e8d43405a74aacc1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

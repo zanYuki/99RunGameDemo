@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour {
 
     public GameObject backGround;
 
+    public GameObject BossHealthFrame;
+
     public Text scoreText;
     public static UIManager instance { get; private set; }
 
@@ -40,5 +42,9 @@ public class UIManager : MonoBehaviour {
 
     public void UpdateProgress (float curPostion) {
         progressSlider.value = curPostion / (backGround.transform.position.x * 2);
+    }
+
+    public void SetBossHealthBarActive(bool isActive){
+        BossHealthFrame.SetActive(isActive);
     }
 }

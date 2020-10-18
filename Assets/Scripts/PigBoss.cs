@@ -5,7 +5,8 @@ using UnityEditor;
 using UnityEngine.SceneManagement;
 
 
-public class PigBoss : MonoBehaviour {
+public class PigBoss : MonoBehaviour
+{
     public GameObject player;
 
     Vector2 palyerVector;
@@ -22,37 +23,92 @@ public class PigBoss : MonoBehaviour {
     public float speed;
     // 获取对象
     private PlayerControllor pc;
+    // 攻击物体
+    public GameObject attackFish;
+
+    public float attackTimer; // 攻击计时器
+
+    public float attackTime = 1; // 攻击计时器
+
+    private bool isAttack; // 是否可攻击
+
+    private ArrayList fishList;
+    private Animator animator;
     // Start is called before the first frame update
-    void Start () {
-        pc = player.GetComponent<PlayerControllor> ();
+    void Start()
+    {
+        pc = player.GetComponent<PlayerControllor>();
+        animator = GetComponent<Animator>();
+        isAttack = true;
+        isMove = false;
+        attackTimer = attackTime;
+        fishList = new ArrayList();
         speed = pc.speed;
         currentHealth = maxHealth;
-        UIManager.instance.UpdateBossHealthBar(currentHealth,maxHealth);
+        UIManager.instance.UpdateBossHealthBar(currentHealth, maxHealth);
+        UIManager.instance.SetBossHealthBarActive(false);
     }
 
     // Update is called once per frame
-    void Update () {
-        if (isMove) {
+    void Update()
+    {
+        if (isMove)
+        {
+            animator.SetTrigger("fly");
             // 如果在视野内则开始 ， 发射小怪 以相同的速度移动，达到相对静止
-            transform.Translate (Vector2.right * Time.deltaTime * speed);
+            transform.Translate(Vector2.right * Time.deltaTime * speed);
             // Boss 攻击模式 召唤小怪，主角攻击小怪，boss掉血可按音乐节奏
-            // ObjectFactory.CreateGameObject("Camera");
-            // Selection.activeGameObject = ObjectFactory.CreateGameObject("Camera", typeof(Camera));
+            attackTimer -= Time.deltaTime;
+            if (attackTimer <= 0)
+            {
+                summonFish();
+                attackTimer = attackTime;
+            }
+        }
+        else
+        {
+            float offest = transform.position.x - player.transform.position.x;
+            if (offest <= 7)
+            {
+                isMove = true;
+                UIManager.instance.SetBossHealthBarActive(true);
+                Debug.Log("isMove : "+isMove + "offest : "+offest);
+                animator.SetTrigger("PigJump");
+            }
         }
     }
     // 在玩家视野内 直到完全显示才同步移动
-    void OnBecameVisible () {
-        isMove = true;
-        Debug.Log ("isview");
-
+    void OnBecameVisible()
+    {
+        // isMove = true;
+        // animator.SetTrigger("PigJump");
+        // Debug.Log("bigboss isview");
     }
 
-    private void OnBecameInvisible () {
-        Debug.Log ("noview");
+    private void OnBecameInvisible()
+    {
+        Debug.Log(" bigboss noview");
         isMove = false;
     }
 
-    private void summonFish(){
+    // 召唤小鱼
+    private void summonFish()
+    {
+        GameObject fish = Instantiate(attackFish, transform.position, Quaternion.identity);
+        fishList.Add(fish);
+    }
 
+    public void changeHealth (int amount) {
+        //更改健康值
+        currentHealth = Mathf.Clamp (currentHealth + amount, 0, maxHealth);
+        // 更新血条
+        UIManager.instance.UpdateBossHealthBar (currentHealth, maxHealth);
+        //调试
+        Debug.Log (currentHealth + "/" + maxHealth);
+        if (currentHealth == 0) {
+            //    SceneManager.LoadScene("GameOver"); 
+            Destroy (this.gameObject);
+            UIManager.instance.SetBossHealthBarActive(false);
+        }
     }
 }
