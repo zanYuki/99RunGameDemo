@@ -8,6 +8,7 @@ TagManager:
   - Monster
   - Hero
   - Score
+  - BossHealthFrame
   layers:
   - Default
   - TransparentFX
