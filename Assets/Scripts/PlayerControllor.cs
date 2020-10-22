@@ -30,6 +30,10 @@ public class PlayerControllor : MonoBehaviour {
 
     public float jumpForce = 2f; // 跳跃力度
     private bool canJump = true; // 是否可以起跳
+
+    private Animator animator;
+    public AudioClip OpenDoorSound;  //指定需要播放的音效
+    private AudioSource source;   //必须定义AudioSource才能调用AudioClip
     public int MyMaxHealth { get { return maxHealth; } }
     //其他脚本可获取当前健康值
     public int MyCurrentHealth { get { return currentHealth; } }
@@ -38,6 +42,8 @@ public class PlayerControllor : MonoBehaviour {
         player = GetComponent<Rigidbody2D> ();
         // rigidbody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D> ();
+        animator = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();  //将this Object 上面的Component赋值给定义的AudioSource
         //初始化生命值
         currentHealth = maxHealth / 2;
         //更新生命条
@@ -75,6 +81,8 @@ public class PlayerControllor : MonoBehaviour {
     }
     // 跳跃动作
     public void jump () {
+        animator.SetTrigger("Jump");
+        source.Play();   //播放声音
         player.velocity = Vector2.up * jumpForce;
     }
 
@@ -110,6 +118,7 @@ public class PlayerControllor : MonoBehaviour {
     public void OnCollisionEnter2D (Collision2D coll) {
         if (coll.gameObject.tag == "Road") {
             canJump = true;
+            animator.SetTrigger("Run");
         }
     }
 }
