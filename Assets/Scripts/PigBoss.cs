@@ -12,7 +12,7 @@ public class PigBoss : MonoBehaviour
     Vector2 palyerVector;
 
     //最大健康值
-    private int maxHealth = 1000;
+    private int maxHealth = 20;
     //当前健康值
     private int currentHealth;
     //其他脚本可获取最大健康值

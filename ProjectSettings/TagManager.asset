@@ -9,6 +9,7 @@ TagManager:
   - Hero
   - Score
   - BossHealthFrame
+  - Boss
   layers:
   - Default
   - TransparentFX
