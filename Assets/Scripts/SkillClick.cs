@@ -9,14 +9,12 @@ public class SkillClick : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
         skillButton = GetComponent<Button> ();
-        skillButton.interactable = false;
+
     }
 
     // Update is called once per frame
     void Update () {
-        if (int.Parse (scoreText.text) >= 100) {
-            skillButton.interactable = true;
-        }
+
     }
 
     public void Click () {

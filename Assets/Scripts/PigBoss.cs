@@ -96,7 +96,7 @@ public class PigBoss : MonoBehaviour
     // 召唤小鱼
     private void summonFish()
     {
-        GameObject fish = Instantiate(attackFish, transform.position, Quaternion.identity);
+        GameObject fish = Instantiate(attackFish, new Vector2(transform.position.x, player.transform.position.y), Quaternion.identity);
         fish.transform.SetParent(fireEntity.transform,true);
         fishList.Add(fish);
     }

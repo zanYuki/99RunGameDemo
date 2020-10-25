@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour {
                 pc.changeHealth (-1);
             }
             Destroy (this.gameObject);
-            UIManager.instance.UpdateScore (10);
+            // UIManager.instance.UpdateScore (10);
             Debug.Log ("玩家碰到了敌人！");
         }
     }

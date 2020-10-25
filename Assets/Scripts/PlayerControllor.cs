@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class PlayerControllor : MonoBehaviour {
     UIManager UI;
 
+    public GameObject attackArea;
+
+    public GameObject skillImg;
+
     //最大健康值
     private int maxHealth = 10;
     //当前健康值
@@ -88,13 +92,15 @@ public class PlayerControllor : MonoBehaviour {
 
     // 攻击动作
     public void attack () {
-        player.velocity = Vector2.right * jumpForce;
+            Debug.Log("gongji");
+        if (attackArea.activeSelf == false) {
+            attackArea.SetActive(true);
+        }
     }
 
     // 技能护盾
     public void skill () {
-        invincibleTimer = 5f;
-        isInvincible = true;
+        skillImg.SetActive(true);
     }
     public void changeHealth (int amount) {
         //可能是受到伤害，也可能是加血
