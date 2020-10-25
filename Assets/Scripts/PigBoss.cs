@@ -34,6 +34,8 @@ public class PigBoss : MonoBehaviour
 
     private ArrayList fishList;
     private Animator animator;
+
+    public GameObject fireEntity;
     // Start is called before the first frame update
     void Start()
     {
@@ -95,6 +97,7 @@ public class PigBoss : MonoBehaviour
     private void summonFish()
     {
         GameObject fish = Instantiate(attackFish, transform.position, Quaternion.identity);
+        fish.transform.SetParent(fireEntity.transform,true);
         fishList.Add(fish);
     }
 
