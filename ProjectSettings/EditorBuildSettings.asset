@@ -6,12 +6,48 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/GameScene0.unity
     guid: e8793d4c600b04047a03819139663d5e
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: ef3c27adb5d21ac45ac705a18a9b182e
-  - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/MainScene1.unity
     guid: c35a7ec4c69084abda6e24adbf0d669e
+  - enabled: 1
+    path: Assets/Scenes/introScence2.unity
+    guid: fbbffeb76b286bc41b8696ddcad5cee5
+  - enabled: 1
+    path: Assets/Scenes/talk1Scence3.unity
+    guid: b636d221ae49b8546b17186220427430
+  - enabled: 1
+    path: Assets/Scenes/talk2Scence4.unity
+    guid: 171e5f3bee558b6478a6537bef3fe43c
+  - enabled: 1
+    path: Assets/Scenes/zhujiaoScence5.unity
+    guid: 734704ebd36e97c478fb57573524a92f
+  - enabled: 1
+    path: Assets/Scenes/story1Scence6.unity
+    guid: ebf0ce6d5f2063042b403af9e7081b9a
+  - enabled: 1
+    path: Assets/Scenes/talk3Scence7.unity
+    guid: e5b3483b1071cff40bd73e936463a8cd
+  - enabled: 1
+    path: Assets/Scenes/story2Scence8.unity
+    guid: c4c083d2328cf254cb41841d3c787faf
+  - enabled: 1
+    path: Assets/Scenes/story4Scence9.unity
+    guid: 2de26cea95a3fe04ca954a9b9bb4ff99
+  - enabled: 1
+    path: Assets/Scenes/story5Scence10.unity
+    guid: 35bb56cab0787834b9b634b51beb29b4
+  - enabled: 1
+    path: Assets/Scenes/story6Scence11.unity
+    guid: 7672703ffb168814a86b0c32dc0fe3e0
+  - enabled: 1
+    path: Assets/Scenes/story7Scence12.unity
+    guid: bfdb9de0a48cd89429ea7f1047772067
+  - enabled: 1
+    path: Assets/Scenes/story8Scence13.unity
+    guid: f50fb1d00836221439dbcbd86dcf3016
+  - enabled: 1
+    path: Assets/Scenes/story3Scence14.unity
+    guid: 95645a17804ad7c4888aa701a52c0df6
   m_configObjects: {}
