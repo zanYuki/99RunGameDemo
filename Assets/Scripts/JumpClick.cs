@@ -11,17 +11,14 @@ public class JumpClick : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
         jumpButton = GetComponent<Button> ();
-        jumpButton.interactable = false;
+        // jumpButton.interactable = false;
     }
 
     // Update is called once per frame
     void Update () {
-        if (player.MyCurrentHealth == player.MyMaxHealth) {
-            jumpButton.interactable = true;
-        }
+        // if (player.MyCurrentHealth == player.MyMaxHealth) {
+        //     jumpButton.interactable = true;
+        // }
     }
 
-    public void Click () {
-        Debug.Log ("JUMP");
-    }
 }

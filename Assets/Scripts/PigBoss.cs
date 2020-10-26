@@ -35,12 +35,18 @@ public class PigBoss : MonoBehaviour
     private ArrayList fishList;
     private Animator animator;
 
+    private AudioSource audioSource;
+
+    private bool isShout;
+
     public GameObject fireEntity;
     // Start is called before the first frame update
     void Start()
     {
         pc = player.GetComponent<PlayerControllor>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        isShout = false;
         isAttack = true;
         isMove = false;
         attackTimer = attackTime;
@@ -72,6 +78,10 @@ public class PigBoss : MonoBehaviour
             float offest = transform.position.x - player.transform.position.x;
             if (offest <= 7)
             {
+                if(!isShout) {
+                    audioSource.Play();
+                    isShout = true;
+                }
                 isMove = true;
                 UIManager.instance.SetBossHealthBarActive(true);
                 Debug.Log("isMove : "+isMove + "offest : "+offest);
