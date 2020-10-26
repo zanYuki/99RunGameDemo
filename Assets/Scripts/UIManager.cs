@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
     // Start is called before the first frame update
@@ -19,11 +20,14 @@ public class UIManager : MonoBehaviour {
     public Text scoreText;
     public static UIManager instance { get; private set; }
 
+    public AudioSource audioSource;
     private void Awake () {
         instance = this;
+        audioSource = GetComponent<AudioSource>();
+        play_stop_music();
     }
     void Start () {
-
+        
     }
 
     public void UpdateHealthBar (int curAmount, int maxAmount) {
@@ -41,10 +45,43 @@ public class UIManager : MonoBehaviour {
     }
 
     public void UpdateProgress (float curPostion) {
-        progressSlider.value = curPostion / (backGround.transform.position.x * 2);
+        Vector2 end =  backGround.GetComponent<PolygonCollider2D>().points[1];
+        progressSlider.value = curPostion / (end.x);
+        if(progressSlider.value>0.95){
+             SceneManager.LoadScene("overScence");
+             pause_music();
+        }
     }
 
     public void SetBossHealthBarActive(bool isActive){
         BossHealthFrame.SetActive(isActive);
+    }
+
+
+    //开始、停止播放
+    public void play_stop_music()
+    {
+        Debug.Log("s");
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.Stop();
+        }
+    }
+    //暂停播放
+    public void pause_music()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Pause();
+        }
+    }
+    //改变音量
+    public void change_volume(float volume)
+    {
+        audioSource.volume = volume;
     }
 }

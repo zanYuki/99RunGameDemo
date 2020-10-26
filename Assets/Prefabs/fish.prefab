@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  attackTime: 2
+  attackTime: 0.5
   speed: 6
   attackSpeed: 20
 --- !u!95 &9054115187854378800

@@ -12,7 +12,7 @@ public class PigBoss : MonoBehaviour
     Vector2 palyerVector;
 
     //最大健康值
-    private int maxHealth = 20;
+    private int maxHealth = 10;
     //当前健康值
     private int currentHealth;
     //其他脚本可获取最大健康值
@@ -76,7 +76,7 @@ public class PigBoss : MonoBehaviour
         else
         {
             float offest = transform.position.x - player.transform.position.x;
-            if (offest <= 7)
+            if (offest <= 5)
             {
                 if(!isShout) {
                     audioSource.Play();

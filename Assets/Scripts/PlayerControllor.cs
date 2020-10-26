@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI; 
 
 public class PlayerControllor : MonoBehaviour {
     UIManager UI;
@@ -43,6 +44,11 @@ public class PlayerControllor : MonoBehaviour {
     public int MyMaxHealth { get { return maxHealth; } }
     //其他脚本可获取当前健康值
     public int MyCurrentHealth { get { return currentHealth; } }
+
+    public Image damage_Image;  
+    public Color flash_Color;  
+    public float flash_Speed = 5;  
+    bool damaged = false;  
     // Start is called before the first frame update
     void Start () {
         player = GetComponent<Rigidbody2D> ();
@@ -83,6 +89,7 @@ public class PlayerControllor : MonoBehaviour {
                 isInvincible = false;
             }
         }
+        // PlayDamagedEffect();
 
     }
     // 跳跃动作
@@ -110,6 +117,7 @@ public class PlayerControllor : MonoBehaviour {
         //可能是受到伤害，也可能是加血
         if (amount < 0) {
             // 如果是受伤， 设置无敌状态， 则2秒内不能受伤
+            damaged = true;
             if (isInvincible) {
                 return;
             }
@@ -121,7 +129,7 @@ public class PlayerControllor : MonoBehaviour {
         //调试
         Debug.Log (currentHealth + "/" + maxHealth);
         if (currentHealth == 0) {
-            //    SceneManager.LoadScene("GameOver"); 
+               SceneManager.LoadScene("failedScence"); 
         }
     }
 
@@ -131,4 +139,17 @@ public class PlayerControllor : MonoBehaviour {
             animator.SetTrigger("Run");
         }
     }
+    /// <summary>  
+    /// 角色受伤后的屏幕效果  
+    /// </summary>  
+    void PlayDamagedEffect(){  
+        if (damaged) {  
+            damage_Image.color = flash_Color;  
+        } else {  
+            damage_Image.color = Color.Lerp(damage_Image.color,Color.clear,flash_Speed * Time.deltaTime);  
+              
+        }  
+        damaged = false;  
+          
+    }  
 }

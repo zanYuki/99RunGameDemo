@@ -24,8 +24,8 @@ public class BossHurt : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerControllor pc = other.GetComponent<PlayerControllor>();
-        if (pc != null)
+        PlayerAttack playerAttack = other.GetComponent<PlayerAttack>();
+        if (playerAttack != null)
         {
             Debug.Log("玩家对boss造成了伤害！");
             pb.changeHealth(-1);
