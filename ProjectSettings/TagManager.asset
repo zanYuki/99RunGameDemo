@@ -10,6 +10,7 @@ TagManager:
   - Score
   - BossHealthFrame
   - Boss
+  - bg
   layers:
   - Default
   - TransparentFX

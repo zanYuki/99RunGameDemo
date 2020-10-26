@@ -10,6 +10,8 @@ public class PlayerControllor : MonoBehaviour {
 
     public GameObject skillImg;
 
+    public GameObject skillEffect;
+
     //最大健康值
     private int maxHealth = 10;
     //当前健康值
@@ -101,6 +103,8 @@ public class PlayerControllor : MonoBehaviour {
     // 技能护盾
     public void skill () {
         skillImg.SetActive(true);
+        skillEffect.SetActive(true);
+
     }
     public void changeHealth (int amount) {
         //可能是受到伤害，也可能是加血

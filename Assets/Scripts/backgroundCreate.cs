@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class background : MonoBehaviour
+public class backgroundCreate : MonoBehaviour
 {
 
-    public Camera camera;
+    public Camera cm;
 
     bool newBgCreated;
 
@@ -19,9 +19,9 @@ public class background : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        camPos = camera.transform.position;
+        camPos = cm.transform.position;
         if (!newBgCreated && camPos.x - transform.position.x > 36.5 - 9) {
-            GameObject newBg = Instantiate(this.gameObject, new Vector2(transform.position.x + 73f, transform.position.y), Quaternion.identity);
+            GameObject newBg = Instantiate(this.gameObject, new Vector2(transform.position.x + 73f, transform.position.y), Quaternion.identity, GameObject.FindWithTag("bg").transform);
             newBgCreated = true;
         }
 
