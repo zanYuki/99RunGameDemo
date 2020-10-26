@@ -12,7 +12,7 @@ public class PigBoss : MonoBehaviour
     Vector2 palyerVector;
 
     //最大健康值
-    private int maxHealth = 1000;
+    private int maxHealth = 20;
     //当前健康值
     private int currentHealth;
     //其他脚本可获取最大健康值
@@ -34,6 +34,8 @@ public class PigBoss : MonoBehaviour
 
     private ArrayList fishList;
     private Animator animator;
+
+    public GameObject fireEntity;
     // Start is called before the first frame update
     void Start()
     {
@@ -94,7 +96,8 @@ public class PigBoss : MonoBehaviour
     // 召唤小鱼
     private void summonFish()
     {
-        GameObject fish = Instantiate(attackFish, transform.position, Quaternion.identity);
+        GameObject fish = Instantiate(attackFish, new Vector2(transform.position.x, player.transform.position.y), Quaternion.identity);
+        fish.transform.SetParent(fireEntity.transform,true);
         fishList.Add(fish);
     }
 

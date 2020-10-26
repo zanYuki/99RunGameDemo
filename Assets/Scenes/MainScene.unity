@@ -1561,8 +1561,6 @@ GameObject:
   - component: {fileID: 921575723}
   - component: {fileID: 921575722}
   - component: {fileID: 921575721}
-  - component: {fileID: 921575725}
-  - component: {fileID: 921575724}
   - component: {fileID: 921575726}
   m_Layer: 5
   m_Name: StartBtn
@@ -1684,30 +1682,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921575719}
   m_CullTransparentMesh: 0
---- !u!114 &921575724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921575719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9211f9b2a27caa74b8df8cef787a548a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &921575725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921575719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9211f9b2a27caa74b8df8cef787a548a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &921575726
 MonoBehaviour:
   m_ObjectHideFlags: 0

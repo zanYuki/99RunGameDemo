@@ -10,7 +10,7 @@ public class AttackClick : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
         attackButton = GetComponent<Button> ();
-        attackButton.interactable = false;
+        // attackButton.interactable = false;
     }
 
     // Update is called once per frame

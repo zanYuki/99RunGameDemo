@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     private GameObject player;
-    private float speed = 1f;
+    // private float speed = 1f;
 
     // Start is called before the first frame update
     void Start () {
@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour {
                 pc.changeHealth (-1);
             }
             Destroy (this.gameObject);
-            UIManager.instance.UpdateScore (10);
+            // UIManager.instance.UpdateScore (10);
             Debug.Log ("玩家碰到了敌人！");
         }
     }
