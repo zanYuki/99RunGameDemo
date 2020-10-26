@@ -119,9 +119,10 @@ public class PigBoss : MonoBehaviour
         //调试
         Debug.Log (currentHealth + "/" + maxHealth);
         if (currentHealth == 0) {
-            //    SceneManager.LoadScene("GameOver"); 
+            SceneManager.LoadScene(16);
             Destroy (this.gameObject);
             UIManager.instance.SetBossHealthBarActive(false);
+            
         }
     }
 }

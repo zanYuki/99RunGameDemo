@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/story3Scence14.unity
     guid: 95645a17804ad7c4888aa701a52c0df6
+  - enabled: 1
+    path: Assets/Scenes/failedScence.unity
+    guid: f0f14dd317eb2de40958a40fa66f96ad
+  - enabled: 1
+    path: Assets/Scenes/overScence.unity
+    guid: 88065f122e89c2249b0c6a794d653c20
   m_configObjects: {}

@@ -121,7 +121,7 @@ public class PlayerControllor : MonoBehaviour {
         //调试
         Debug.Log (currentHealth + "/" + maxHealth);
         if (currentHealth == 0) {
-            //    SceneManager.LoadScene("GameOver"); 
+                SceneManager.LoadScene(15); 
         }
     }
 
