@@ -8,7 +8,7 @@ public class goGame : MonoBehaviour
 
     public void GoGameCLick()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameScene");
     }
     // Start is called before the first frame update
     void Start()

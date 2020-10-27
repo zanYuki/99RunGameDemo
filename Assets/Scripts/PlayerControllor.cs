@@ -98,9 +98,15 @@ public class PlayerControllor : MonoBehaviour {
     }
     // 跳跃动作
     public void jump () {
-        animator.SetTrigger("Jump");
-        source.Play();   //播放声音
-        player.velocity = Vector2.up * jumpForce;
+        //控制跳跃
+        if (canJump)
+        {
+            animator.SetTrigger("Jump");
+            source.Play();   //播放声音
+            player.velocity = Vector2.up * jumpForce;
+            canJump = false;
+        }
+
     }
 
     // 攻击动作
