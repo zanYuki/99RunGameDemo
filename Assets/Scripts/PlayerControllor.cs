@@ -14,7 +14,7 @@ public class PlayerControllor : MonoBehaviour {
     public GameObject skillEffect;
 
     //最大健康值
-    private int maxHealth = 10;
+    private int maxHealth = 20;
     //当前健康值
     private int currentHealth;
     //其他脚本可获取最大健康值
@@ -41,6 +41,7 @@ public class PlayerControllor : MonoBehaviour {
     private Animator animator;
     public AudioClip OpenDoorSound;  //指定需要播放的音效
     private AudioSource source;   //必须定义AudioSource才能调用AudioClip
+    public GameObject hurtsource;   //必须定义AudioSource才能调用AudioClip
     public int MyMaxHealth { get { return maxHealth; } }
     //其他脚本可获取当前健康值
     public int MyCurrentHealth { get { return currentHealth; } }
@@ -57,10 +58,9 @@ public class PlayerControllor : MonoBehaviour {
         animator = GetComponent<Animator>();
         source = GetComponent<AudioSource>();  //将this Object 上面的Component赋值给定义的AudioSource
         //初始化生命值
-        currentHealth = maxHealth / 2;
+        currentHealth = maxHealth;
         //更新生命条
         UIManager.instance.UpdateHealthBar (currentHealth, maxHealth);
-
     }
 
     // Update is called once per frame
@@ -88,6 +88,10 @@ public class PlayerControllor : MonoBehaviour {
             if (invincibleTimer <= 0) {
                 isInvincible = false;
             }
+        }
+        // 如果人物跳出屏幕，则游戏失败
+        if(transform.position.y<-17){
+            SceneManager.LoadScene("failedScence");
         }
         // PlayDamagedEffect();
 
@@ -118,6 +122,8 @@ public class PlayerControllor : MonoBehaviour {
         if (amount < 0) {
             // 如果是受伤， 设置无敌状态， 则2秒内不能受伤
             damaged = true;
+            hurtsource.GetComponent<AudioSource>().Play();
+            player.velocity = Vector2.left * jumpForce;
             if (isInvincible) {
                 return;
             }
